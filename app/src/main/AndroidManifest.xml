@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gaurk.xpd_office">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main_Drawer_Activity"
+            android:label="Dashboard"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation_classes.Add_Employee"
+            android:label="Employee Management"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation_classes.Employee_mgmt"
+            android:label="Employee Management" />
+        <activity
+            android:name=".navigation_classes.Leave_management"
+            android:label="Leave Management"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation_classes.Customer_management"
+            android:label="Customer Management"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation_classes.System_Pref"
+            android:label="System Preference"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation_classes.Project_management"
+            android:label="Project Management"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation_classes.Timesheet"
+            android:label="Timesheet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation_classes.Reports"
+            android:label="Reports"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

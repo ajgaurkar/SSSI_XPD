@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gaurk.xpd_office.navigation_classes.Add_Employee">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_emp_seperator_View"
+        app:layout_constraintTop_toBottomOf="@+id/add_emp_seperator_View">
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginStart="180dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/sys_pref_comp_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:text="Scientific Systems and Software International"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/sys_pref_comp_name_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:hint="Company name"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_comp_name_edittext" />
+
+        <View
+            android:id="@+id/sys_pref_seperator_View_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#c8c8c8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_comp_name_textview" />
+
+
+        <EditText
+            android:id="@+id/sys_pref_addr_ln_1_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none"
+            android:text="5523 Research Park drive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_seperator_View_1" />
+
+        <TextView
+            android:id="@+id/sys_pref_addr_ln_1_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Add line 1"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_addr_ln_1_edittext" />
+
+        <EditText
+            android:id="@+id/sys_pref_addr_ln_2_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none"
+            android:text="Suite 260 "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_addr_ln_1_text_view" />
+
+        <TextView
+            android:id="@+id/sys_pref_addr_ln_2_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Add line 2"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_addr_ln_2_edittext" />
+
+        <EditText
+            android:id="@+id/sys_pref_zipcode_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none"
+            android:text="21228"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_addr_ln_2_text_view" />
+
+        <TextView
+            android:id="@+id/sys_pref_zipcode_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Zipcode"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_zipcode_edittext" />
+
+        <EditText
+            android:id="@+id/sys_pref_country_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="none"
+            android:text="USA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_zipcode_text_view" />
+
+        <TextView
+            android:id="@+id/sys_pref_country_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Country"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_country_edittext" />
+
+        <EditText
+            android:id="@+id/sys_pref_state_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:text="Maryland"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_country_text_view" />
+
+        <TextView
+            android:id="@+id/sys_pref_state_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="State"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_state_edittext" />
+
+        <EditText
+            android:id="@+id/sys_pref_city_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:text="Baltimore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_state_text_view" />
+
+        <TextView
+            android:id="@+id/sys_pref_city_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="City"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_city_edittext" />
+
+        <View
+            android:id="@+id/sys_pref_comp_info_seperator_View_2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#c8c8c8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_city_text_view" />
+
+        <EditText
+            android:id="@+id/sys_pref_phone_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:text="4107155700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_comp_info_seperator_View_2" />
+
+        <TextView
+            android:id="@+id/sys_pref_phone_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Phone"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_phone_edittext" />
+
+        <EditText
+            android:id="@+id/sys_pref_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:focusable="false"
+            android:text="info@sssi.net"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_phone_edittext" />
+
+        <TextView
+            android:id="@+id/sys_pref_email_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Email"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_email_edittext" />
+
+
+        <Button
+            android:id="@+id/sys_pref_comp_info_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Save"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_email_text_view" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sys_pref_comp_info_save_button" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

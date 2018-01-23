@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/admin_96"
+            android:title="Admin" />
+        <item
+            android:id="@+id/nav_hr"
+            android:icon="@drawable/hr__96"
+            android:title="HR" />
+        <!--<item-->
+        <!--android:id="@+id/nav_cust_mgmt"-->
+        <!--android:icon="@drawable/customer_96"-->
+        <!--android:title="Cutomer management" />-->
+        <item
+            android:id="@+id/nav_proj_mgmt"
+            android:icon="@drawable/project_96"
+            android:title="Project Management" />
+        <item
+            android:id="@+id/nav_timesheet"
+            android:icon="@drawable/timesheet_96"
+            android:title="Timesheet" />
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/reports_96"
+            android:title="Reports" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_96"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gaurk.xpd_office.Main_Drawer_Activity"
+    tools:showIn="@layout/app_bar_main__drawer_">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/add_employee_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:focusableInTouchMode="true"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/add_employee_header_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dash_text_view_bg"
+                    android:padding="8dp"
+                    android:text="Add Employee"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/add_employee_f_name_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/add_employee_header_text_view"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toStartOf="@+id/view"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/add_employee_l_name_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/add_employee_f_name_editText"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/view"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/add_employee_f_name_editText"
+                    android:background="#d2d3d5" />
+
+                <EditText
+                    android:id="@+id/add_employee_hire_dt_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/add_employee_f_name_editText"
+                    android:layout_alignStart="@+id/add_employee_f_name_editText"
+                    android:layout_below="@+id/add_employee_f_name_editText"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="Hire date"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <EditText
+                    android:id="@+id/add_employee_email_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/add_employee_hire_dt_editText"
+                    android:layout_alignBottom="@+id/add_employee_hire_dt_editText"
+                    android:layout_alignEnd="@+id/add_employee_l_name_"
+                    android:layout_alignStart="@+id/add_employee_l_name_"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <Button
+                    android:id="@+id/add_employee_card_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/add_employee_hire_dt_editText"
+                    android:layout_margin="10dp"
+                    android:text="Add" />
+
+                <TextView
+                    android:id="@+id/dash_goto_employee_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/add_employee_card_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:text="New Employee"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/dash_goto_employee_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/dash_goto_employee_tv"
+                    android:layout_alignTop="@+id/dash_goto_employee_tv"
+                    android:layout_toStartOf="@id/dash_goto_employee_tv"
+                    android:src="@drawable/fwd_arrow" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/create_dept_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/add_employee_card_view">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/create_dept_header_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dash_text_view_bg"
+                    android:padding="8dp"
+                    android:text="Create Department"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/create_dept_dept_name_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/create_dept_header_text_view"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="Department Name"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <Spinner
+                    android:id="@+id/create_dept_sel_dept_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/create_dept_dept_name_editText"
+                    android:layout_alignStart="@+id/create_dept_dept_name_editText"
+                    android:layout_below="@+id/create_dept_dept_name_editText"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="Select Parent Department"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <Button
+                    android:id="@+id/create_dept_card_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/create_dept_sel_dept_spinner"
+                    android:layout_margin="10dp"
+                    android:text="Add" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/create_dept_sel_dept_spinner"
+                    android:layout_alignEnd="@+id/create_dept_sel_dept_spinner"
+                    android:layout_below="@+id/create_dept_dept_name_editText"
+                    app:srcCompat="@drawable/arrow_down" />
+
+                <TextView
+                    android:id="@+id/dash_goto_create_dept_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/create_dept_card_button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:text="Dept. Details"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/create_dept_employee_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/dash_goto_create_dept_tv"
+                    android:layout_alignTop="@+id/dash_goto_create_dept_tv"
+                    android:layout_toStartOf="@id/dash_goto_create_dept_tv"
+                    android:src="@drawable/fwd_arrow" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/time_sheet_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/create_dept_card_view">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/time_sheet_header_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dash_text_view_bg"
+                    android:padding="8dp"
+                    android:text="Timesheet"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/time_sheet_f_name_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_sheet_header_text_view"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toStartOf="@+id/view1"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="Date"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <Spinner
+                    android:id="@+id/time_sheet_pro_type_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/time_sheet_f_name_editText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/view1"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="All Projects"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_sheet_f_name_editText"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:weightSum="20">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:padding="3dp"
+                        android:text="Task" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="3dp"
+                        android:text="Status%" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="3dp"
+                        android:text="Hours" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/timesheet_seperator_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linear_layout_1"
+                    android:background="#d2d3d5" />
+
+                <ListView
+                    android:id="@+id/timesheet_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/timesheet_seperator_view"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:id="@+id/timesheet_listview_blank_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/timesheet_seperator_view"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="No Records Found" />
+
+
+                <TextView
+                    android:id="@+id/dash_goto_timesheet_details_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/timesheet_listview"
+                    android:text="Timesheet Details"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/timesheet_details_iv"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/dash_goto_timesheet_details_tv"
+                    android:layout_alignTop="@+id/dash_goto_timesheet_details_tv"
+                    android:layout_toStartOf="@id/dash_goto_timesheet_details_tv"
+                    android:src="@drawable/fwd_arrow" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/reset_pass_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_sheet_card_view">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/reset_pass_header_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dash_text_view_bg"
+                    android:padding="8dp"
+                    android:text="Reset Employee Password"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/reset_pass_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/reset_pass_header_text_view"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dash_edit_fields_bg"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:padding="5dp" />
+
+                <Button
+                    android:id="@+id/reset_pass_card_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/reset_pass_editText"
+                    android:layout_margin="10dp"
+                    android:text="Reset" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/reset_pass_card_view" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
